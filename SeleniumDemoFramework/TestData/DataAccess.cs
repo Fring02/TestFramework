@@ -10,7 +10,7 @@ namespace SeleniumDemoFramework.TestData
         public static string TestDataFileConnection()
         {
             var fileName = ConfigurationManager.AppSettings["TestDataSheetPath"];
-            var con = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = {0}; Extended Properties=Excel 12.0;", fileName);
+            var con = $@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = {fileName}; Extended Properties=Excel 12.0;";
             return con;
         }
 

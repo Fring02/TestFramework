@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.PageObjects;
-using OpenQA.Selenium.Support.UI;
-using System.Threading;
-
-namespace SeleniumDemoFramework
+﻿namespace SeleniumDemoFramework
 {
     public class AboutPage
     {

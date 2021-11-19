@@ -12,7 +12,7 @@ namespace SeleniumDemoFramework
         private static T GetPage<T>() where T : new()
         {
             var page = new T();
-            IWebDriver driver = Browser._Driver;
+            IWebDriver driver = Browser.WebDriver;
             PageFactory.InitElements(Browser.Driver, page);
             
             return page;

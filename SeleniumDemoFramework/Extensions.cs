@@ -18,7 +18,7 @@ namespace SeleniumDemoFramework
             {
                 var text = element.Text;
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }
@@ -31,8 +31,8 @@ namespace SeleniumDemoFramework
 
             
 
-            Actions move = new Actions(Browser._Driver);
-           // move.DragAndDropToOffset(pricingSider, count, range).Build();
+            Actions move = new Actions(Browser.WebDriver);
+            //move.DragAndDropToOffset(pricingSider, count, range).Build();
            // move.Perform();
         }
 

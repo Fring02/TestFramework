@@ -11,13 +11,13 @@ namespace SOpenQA.Selenium
     public static class IWebDriverExtensions
     {
 
-        public static void FindSelectElement(this IWebDriver driver, By bylocator, String text)
+        public static void FindSelectElement(this IWebDriver driver, By bylocator, string text)
         {
             // Finds a select element and then selects
             // the option element using the visible text
 
             IWebElement selectElement = driver.FindElement(bylocator);
-            selectElement.FindElement(By.XPath("//option[contains(text(), '" + text + "')]")).Click();
+            selectElement.FindElement(By.XPath($"//option[contains(text(), '{text}')]")).Click();
         }
 
         public static bool WaitForAjax(this IWebDriver driver)

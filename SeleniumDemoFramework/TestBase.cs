@@ -10,7 +10,6 @@ namespace SeleniumDemoFramework
         public static void Initialize()
         {
             Browser.Initialize();
-            UserGenerator.Initialize();
         }        
 
         [TestFixtureTearDown]
@@ -25,14 +24,13 @@ namespace SeleniumDemoFramework
 
             // Implement clean logout for user, remove session storage etc...) 
 
-            //will hack for now
             Browser.Goto("");
 
             //if(Pages.TopNavigation.IsLoggedIn())
-            //    Pages.TopNavigation.LogOut();
+             //   Pages.TopNavigation.LogOut();
 
             //if(UserGenerator.LastGeneratedUser != null)
-            //    Browser.Goto("????");
+             //   Browser.Goto("????");
         }
     }
 }

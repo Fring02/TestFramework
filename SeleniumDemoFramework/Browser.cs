@@ -8,11 +8,11 @@ namespace SeleniumDemoFramework
 {
     public class Browser
     {
-        public IWebDriver WebDriver { get; set; }
+        public static IWebDriver WebDriver { get; set; }
         public string environmentURL { get; set; }
 
-        private static string baseUrl = "http://businessco.azurewebsites.net/"; //use app config for determining environment
-        private static IWebDriver webDriver = new FirefoxDriver();
+        private static string baseUrl = "https://businessco.azurewebsites.net/"; //use app config for determining environment
+        //private static IWebDriver webDriver = new FirefoxDriver();
 
         public Browser(IWebDriver webDriver)
         {
@@ -22,40 +22,33 @@ namespace SeleniumDemoFramework
 
         public static void Initialize()
         {
-            
             Goto("");
         }
 
         public static string Title
         {
-            get { return webDriver.Title; }
+            get { return WebDriver.Title; }
         }
 
         public static string CurrentURL
         {
-            get { return webDriver.Url; }
+            get { return WebDriver.Url; }
         }
 
         public static ISearchContext Driver
         {
-            get { return webDriver; }
-        }
-
-        public static IWebDriver _Driver
-        {
-            get { return webDriver; }
+            get { return WebDriver; }
         }
 
         public static void Goto(string url)
         {
-            webDriver.Url = baseUrl + url;
+            WebDriver.Url = baseUrl + url;
         }
 
         public static void Close()
         {
-            //webDriver.Close();
+            WebDriver.Close();
         }
-
         
     }
 }
