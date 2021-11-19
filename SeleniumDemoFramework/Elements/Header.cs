@@ -12,9 +12,13 @@ namespace SeleniumDemoFramework.Elements
     {
         public Header(IWebDriver driver) : base(driver)
         {
-            _element = driver.FindElement(By.TagName("header"));
+           _element = driver.FindElement(By.TagName("header"));
         }
 
+        /// <summary>
+        /// Checks whether the header contains navbar
+        /// </summary>
+        /// <returns></returns>
         public bool ContainsNavbar()
         {
             try
@@ -26,7 +30,10 @@ namespace SeleniumDemoFramework.Elements
             }
             return true;
         }
-
+        /// <summary>
+        /// Checks whether the header has fixed position
+        /// </summary>
+        /// <returns></returns>
         public bool IsFixed()
         {
             try

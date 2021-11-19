@@ -15,15 +15,27 @@ namespace SeleniumDemoFramework.Elements
         {
             _driver = driver;
         }
-        public bool Enabled()
+        /// <summary>
+        /// Returns the enabled or disabled state of an element
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool Enabled()
         {
             return _element.Enabled;
         }
-        public bool HasText()
+        /// <summary>
+        /// Returns if the element contains text inside
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool HasText()
         {
             return !string.IsNullOrEmpty(_element?.Text);
         }
-        public bool IsClickable()
+        /// <summary>
+        /// Returns whether element can be clicked
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool IsClickable()
         {
             try
             {
@@ -34,12 +46,19 @@ namespace SeleniumDemoFramework.Elements
             }
             return false;
         }
-        public bool IsDisplayed()
+        /// <summary>
+        /// Returns whether the element is displayed on the web page
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool IsDisplayed()
         {
             return _element.Displayed;
         }
-
-        public bool MoreThanOne()
+        /// <summary>
+        /// Checks whether there are more than one element specified
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool MoreThanOne()
         {
             return _driver.FindElements(By.TagName(_element.TagName)).Any();
         }

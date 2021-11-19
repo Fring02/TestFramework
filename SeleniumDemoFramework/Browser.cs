@@ -10,13 +10,11 @@ namespace SeleniumDemoFramework
     {
         public static IWebDriver Driver { get; set; }
 
-        private static string baseUrl;
 
         public static void Initialize(IWebDriver webDriver, string url)
         {
-            baseUrl = url;
             Driver = webDriver;
-            Goto("");
+            Goto(url);
         }
 
         public static string Title => Driver.Title;
@@ -27,7 +25,7 @@ namespace SeleniumDemoFramework
 
         public static void Goto(string url)
         {
-            Driver.Url = baseUrl + url;
+            Driver.Url = url;
         }
 
         public static void Close()

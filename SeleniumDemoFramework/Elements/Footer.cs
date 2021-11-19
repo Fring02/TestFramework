@@ -25,7 +25,10 @@ namespace SeleniumDemoFramework.Elements
                 return false;
             }
         }
-
+        /// <summary>
+        /// Checks whether the footer page has contacts
+        /// </summary>
+        /// <returns></returns>
         public bool HasContacts()
         {
             try

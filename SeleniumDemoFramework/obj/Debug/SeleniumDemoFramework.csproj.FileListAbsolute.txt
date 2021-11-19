@@ -32,7 +32,6 @@ D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\Se
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\Dapper.dll
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\Dapper.xml
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\chromedriver.exe
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\SeleniumDemoFramework.dll.config
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\SeleniumDemoFramework.dll
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\SeleniumDemoFramework.pdb
@@ -45,7 +44,6 @@ C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\nunit.core.interfaces.dll
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\Dapper.xml
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\nunit.framework.xml
-C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\WebDriver.xml
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\bin\Debug\WebDriver.Support.xml
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.csproj.AssemblyReference.cache
 C:\Users\ASUS\source\repos\TestAutomationFrameworkSelenium\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.csproj.CoreCompileInputs.cache
