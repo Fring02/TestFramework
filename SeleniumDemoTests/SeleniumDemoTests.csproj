@@ -73,8 +73,8 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Features\TopNavigationTests.cs" />
-    <Compile Include="SmokeTests.cs" />
+    <Compile Include="Features\ElementsTest.cs" />
+    <Compile Include="Features\TestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -16,7 +16,7 @@ namespace SeleniumDemoTests.Features
         }
 
         [TearDown]
-        public static void Release()
+        public static void Releasdsae()
         {
             Browser.Close();
         }

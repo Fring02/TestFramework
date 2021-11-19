@@ -6,48 +6,33 @@ using OpenQA.Selenium.Firefox;
 
 namespace SeleniumDemoFramework
 {
-    public class Browser
+    public static class Browser
     {
-        public static IWebDriver WebDriver { get; set; }
-        public string environmentURL { get; set; }
+        public static IWebDriver Driver { get; set; }
 
-        private static string baseUrl = "https://businessco.azurewebsites.net/"; //use app config for determining environment
-        //private static IWebDriver webDriver = new FirefoxDriver();
+        private static string baseUrl;
 
-        public Browser(IWebDriver webDriver)
+        public static void Initialize(IWebDriver webDriver, string url)
         {
-            environmentURL = ConfigurationManager.AppSettings["Base_URL"];
-            WebDriver = webDriver;
-        }
-
-        public static void Initialize()
-        {
+            baseUrl = url;
+            Driver = webDriver;
             Goto("");
         }
 
-        public static string Title
-        {
-            get { return WebDriver.Title; }
-        }
+        public static string Title => Driver.Title;
 
-        public static string CurrentURL
-        {
-            get { return WebDriver.Url; }
-        }
+        public static string CurrentURL => Driver.Url;
 
-        public static ISearchContext Driver
-        {
-            get { return WebDriver; }
-        }
+        public static ISearchContext SearchContextDriver => Driver;
 
         public static void Goto(string url)
         {
-            WebDriver.Url = baseUrl + url;
+            Driver.Url = baseUrl + url;
         }
 
         public static void Close()
         {
-            WebDriver.Close();
+            Driver.Close();
         }
         
     }

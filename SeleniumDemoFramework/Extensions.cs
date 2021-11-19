@@ -12,29 +12,5 @@ namespace SeleniumDemoFramework
     public static class Extensions
     {
 
-        public static bool Exists(this IWebElement element)
-        {
-            try
-            {
-                var text = element.Text;
-            }
-            catch
-            {
-                return false;
-            }
-
-            return true;
-        }
-
-        public static void DragAndDrop(int count, int range)
-        {
-
-            
-
-            Actions move = new Actions(Browser.WebDriver);
-            //move.DragAndDropToOffset(pricingSider, count, range).Build();
-           // move.Perform();
-        }
-
     }
 }
